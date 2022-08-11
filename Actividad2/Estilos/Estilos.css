@@ -1,4 +1,42 @@
-.borderBox{
+.borderBox {
     border: 1px solid black;
     height: 100px;
+}
+
+#titulo{
+    text-align: center;
+}
+
+#fondo {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 27.5px 27.5px, linear-gradient(#4f54b3 2.2px, transparent 2.2px) 0 -1.1px, linear-gradient(90deg, #4f54b3 2.2px, #e5e5f7 2.2px) -1.1px 0;
+    background-size: 55px 55px, 55px 55px, 27.5px 27.5px, 27.5px 27.5px;
+    height: 150px;
+}
+
+#principal {
+    margin-top: 5%;
+    padding: 20px;
+    border: solid 1px #131313;
+    height: 590px;
+    width: 60%;
+}
+
+#principal img {
+    height: 150px;
+    width: 170px;
+    border-radius: 100%;
+}
+
+#imagen {
+    /*border: 1px solid #000000;*/
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    margin: auto;
 }
