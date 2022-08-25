@@ -19,8 +19,9 @@
     margin-top: 5%;
     padding: 20px;
     border: solid 1px #131313;
-    height: 590px;
+    /*height: 590px;*/
     width: 60%;
+    margin-bottom: 5%;
 }
 
 #principal img {

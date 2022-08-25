@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables en CSS3</title>
+
+    <style>
+        :root{
+            --fondoheader: green;
+            --fondopage: white;
+            --colorletra: black;
+        }
+        header{
+            color: var(--colorletra);
+            background-color: var(--fondoheader);
+        }
+        body{
+            color: var(--colorletra);
+            background-color: var(--fondopage);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <button onclick="darkmode()" id="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+          </svg> Modo oscuro
+    </button>
+
+    <header id="fondo">
+        <h1>Probando ando Variables</h1>
+    </header>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Consectetur dolorum quisquam voluptate voluptatibus 
+        rerum officiis ipsum doloremque adipisci consequatur molestias minus, 
+        itaque excepturi architecto minima, saepe vero natus veritatis fugiat!
+    </p>
+
+    
+    <script>
+        function darkmode(){
+
+            //Obtener la variable desde el estilo inline
+
+            /*document.getElementById('fondo').style.setProperty('--fondoheader', 'blue');
+            
+            document.querySelector('body').style.setProperty('--fondopage', 'black');
+            document.getElementsByTagName('body')[0].style.setProperty('--colorletra', 'white');*/
+
+            let fondo = document.getElementsByTagName('body')[0];
+            console.log(fondo.style.getPropertyValue('--fondopage'));
+
+            if(fondo.style.getPropertyValue('--fondopage') === 'white'){
+                fondo.style.setProperty('--fondopage', 'black');
+                fondo.style.setProperty('--colorletra', 'white');
+
+            }else{
+                fondo.style.setProperty('--fondopage', 'white');
+                fondo.style.setProperty('--colorletra', 'black');
+            }
+
+            //let cambio = document.getElementById('fondo');
+            //cambio.style.setProperty('--fondoheader', 'blue');
+            
+            //let button = document.getElementById('button');
+            //button.innerHTML();
+
+            //cambio.style.setProperty('blue');
+            
+
+            //Obtener variable desde cualquier lugar
+            //getComputedStyle.setProperty(element).getPropertyValue('--fondoheader');
+
+            //Establecer variable en estilo inline
+            //element.style.setProperty('--fondoheader', jsVar + 4);
+
+        }
+
+    </script>
+
+</body>
+</html>
