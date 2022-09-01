@@ -1,10 +1,7 @@
-.borderBox {
-    border: 1px solid black;
-    height: 100px;
-}
-
-#titulo{
-    text-align: center;
+#titulo, #principal article h1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 #fondo {
@@ -12,7 +9,7 @@
     opacity: 0.8;
     background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 27.5px 27.5px, linear-gradient(#4f54b3 2.2px, transparent 2.2px) 0 -1.1px, linear-gradient(90deg, #4f54b3 2.2px, #e5e5f7 2.2px) -1.1px 0;
     background-size: 55px 55px, 55px 55px, 27.5px 27.5px, 27.5px 27.5px;
-    height: 150px;
+    height: 100px;
 }
 
 #principal {
@@ -22,6 +19,15 @@
     /*height: 590px;*/
     width: 60%;
     margin-bottom: 5%;
+}
+
+#principal section{
+    display: flex;
+}
+
+#principal article span{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #principal img {
@@ -41,3 +47,33 @@
 * {
     margin: auto;
 }
+
+.desc{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2%;
+}
+
+.temas{
+    display: flex;
+}
+
+.sec{
+    display: inline;
+}
+
+.sec img{
+    margin-left: 3%;
+}
+
+#formulario{
+    display: flex;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;    
+}
+
+

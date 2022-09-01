@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Academico, Personal">
+    <meta name="description" content="Aqui se encuentra el perfil profesional">
+    <meta name="author" content="Sebastian Pertuz">
+    <title>Perfil Profesional</title>
+    <link rel="stylesheet" href="Estilos/Estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <style>
+        :root{
+          --fondopage: white;
+          --fondonav: skyblue;
+          --colorletra: black;
+        }
+        body{
+            color: var(--colorletra);
+            background-color: var(--fondopage);
+        }
+        nav{
+            color: var(--colorletra);
+            background-color: var(--fondonav);
+        }
+      </style>
+
+</head>
+<body>
+    
+    <header id="fondo"></header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="./Index.html">Portafolio personal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./perfilPers.html">Perfil Profesional</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./formulario.html">Formulario</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./horarios.html" role="button">
+                Horarios
+              </a>
+            </li>
+            <li class="nav-item active">
+              <button class="btn btn-dark" onclick="darkmode()" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+              </svg></button>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-warning my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+    </nav>
+
+    <main>
+        <section id="principal">
+
+            <h1 id="titulo">Sebastian Pertúz Gonzalez</h1><br/>
+
+            <div id="imagen">
+                <img src="http://pa1.narvii.com/7276/85bd8b544eb7cae223a6bb4f9c417a0007eccfcfr1-316-200_00.gif" alt="Nyan Cat">
+            </div>
+            
+            <br/><article>
+                <h1>Descripción</h1>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quisquam vero harum quibusdam repellat exercitationem, odio ullam natus repellendus nulla laudantium, obcaecati dolores laboriosam possimus libero blanditiis eum magni sed!</p>
+            </article>
+
+            <br><section>
+                <br/><article>
+                    <h1>Habilidades</h1>
+                    <p> Soy un experto jugando Lux mid.</p>
+                </article>
+
+                <br/><article>
+                    <h1>Estudios</h1>
+                    <p>Realicé una media técnica en Diseño Gráfico</p>
+                </article>
+            </section>
+            <br/><article>
+                <h1>
+                    Experiencia laboral
+                </h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum, illum consequuntur praesentium sit beatae quis ad quam harum sint nesciunt velit vero a ab! Eveniet accusantium quisquam vel deserunt!</p>
+            </article>
+
+            <br/><article>
+                <h1>
+                    Referencias
+                </h1>
+                <span> Sebastian Pertuz // Desarrollador de Software <br/></span>
+                <span>Liliana Gonzalez // Abogada</span>
+            </article>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="./JavaScripts/main.js"></script>
+
+</body>
+</html>
